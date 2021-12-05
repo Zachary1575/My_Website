@@ -1,12 +1,15 @@
-import React from 'react'
-import ContentTemp from './ContentTemp'
+import React from 'react';
+import ContentTemp from './ContentTemp';
+import './Home.css';
+import HeroSection from './HeroSection'
+import { banner } from './Data';
 
 function Home() {
+
+  
     return (
-        <>
-            <ContentTemp />
-            <ContentTemp />
-            <ContentTemp />
+        <>  
+            <HeroSection {...banner} />
             <ContentTemp />
         </>
     )
