@@ -1,0 +1,48 @@
+.Nav {
+	overflow: hidden;
+	height: 55px;
+	/*margin-top: -80px;*/
+	display: flex;
+	font-size: 1rem;
+	position: fixed;
+	bottom: 0;
+	right:0px;
+	z-index: 10;
+	width: 400px;
+	height: 400px;
+}
+
+.navbar-nav {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*The Menu that holds all the elements of Navbar Items*/
+.NavMenu{
+	display: flex;
+	align-items: flex-end;
+	list-style: none;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+
+	/*Hides the Navbar Compnents when screen schriks to 768px*/
+	@media screen and (max-width: 768px){
+		display: none;
+	}
+
+}
+
+/* NAV BUTTON CSS */
+.nav-item {
+    --nav-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--nav-size) * 0.8);
+}

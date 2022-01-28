@@ -1,0 +1,50 @@
+.dropdown {
+    position: absolute;
+    bottom: 35px;
+    width: 300px;
+    /*transform: translateX(-45%);*/
+    background-color: #484a4d;
+    overflow: hidden;
+    border-radius: 10px;
+    animation-name: translateX;
+    animation-duration: 0.3s;
+    /*animation-fill-mode: forwards;*/
+
+}
+
+.menu-item {
+    --speed: 500ms;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    transition: background-size var(--speed);
+    background-color: transparent;
+    color: rgb(209, 21, 21);
+    padding: 0.1rem;
+    width: 100%;
+    
+}
+
+.menu-item:hover {
+    background-color: #525357;
+}
+
+/* CSS Animations */
+@keyframes translateX {
+    0% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    
+    80% {
+      transform: translateX(-5px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+
+    }
+  }

@@ -1,6 +1,8 @@
 .HeroContainer {
-    background-color: rgb(36, 40, 47);
+    background-color: #ffffff;
     padding: 160px, 0;
+    height: 1080px;
+
 }
 
 .Hero-img-wrapper{
