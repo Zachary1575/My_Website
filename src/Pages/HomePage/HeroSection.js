@@ -1,22 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react';
+//Use react-scroll-parallax for parallax effect.
+import { ParallaxBanner  } from 'react-scroll-parallax';
 import './HeroSection.css';
-import banner from "./../../Assets/images/banner.svg"
+import BannerImage from './../../Assets/images/banner.svg';
 
-function HeroSection({header, description, alt}) {
-    return (
-        <>
-            <div className= "HeroContainer">
-                <div className="Hero-img-wrapper">
-                    <img src={banner} alt={alt} className="home__hero-img"></img>
-                </div>
+class HeroSection extends Component {
+    
 
-                <div className="Hero-Class-Wrapper">
-                    <h1>{header}</h1>
-                    <p>{description}</p>
+    render() { 
+        
+
+        return (
+            <React.Fragment>
+                <ParallaxBanner className='header-background' layers={[{ image: `${BannerImage}`, speed: -50 }]} >
+                <div className="info-container">
+                    <h1 className="text">Hello World!</h1>
                 </div>
-            </div>
-        </>
-    )
+                </ParallaxBanner>
+            </React.Fragment>
+        );
+    }
 }
-
-export default HeroSection
+ 
+export default HeroSection;

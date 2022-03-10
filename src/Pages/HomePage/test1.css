@@ -1,11 +1,14 @@
 .header-background{
+    background-image: url("./../../Assets/images/Banner-Para.svg");
+    background-attachment: fixed;
     height: 1080px;
-    width: 1903px;
+    max-width: 1903px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 10;
-    
+
 }
 
 .info-container {
@@ -17,6 +20,6 @@
     flex-direction: column;
     opacity: 50;
     background-color: white;
-    inset: 0;
+    border: 3px solid #da5d5d;
     
 }
